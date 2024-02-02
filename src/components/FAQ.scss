@@ -1,0 +1,10 @@
+.title {
+   font-size: 40px;
+   line-height: 1;
+   letter-spacing: 4px;
+   text-align: center;
+
+   &:not(:last-child) {
+      margin-bottom: 64px;
+   }
+}
