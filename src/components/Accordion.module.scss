@@ -1,0 +1,45 @@
+.accordion {
+   max-width: 620px;
+   margin: 0 auto;
+   background-color: white;
+   border-radius: 8px;
+
+   &:not(:last-child) {
+      margin-bottom: 32px;
+   }
+}
+
+.accordionTitle {
+   padding: 24px 24px 16px;
+   cursor: pointer;
+
+   h2 {
+      position: relative;
+   }
+
+   svg {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      font-size: 28px;
+
+      transition: transform 0.2s ease-in-out;
+   }
+}
+
+.accordionCollapsed {
+   padding: 0 24px;
+   height: 0px;
+   overflow: hidden;
+
+   transition: height 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+   &_show {
+      height: 100px;
+   }
+}
+
+.accordionBody {
+   border-top: 1px solid gray;
+   padding: 16px 0 24px;
+}
